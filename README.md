@@ -27,7 +27,8 @@ A single page application in Java using SQLite 3 to list and categorize country 
 `docker build -t angular-phone-validation ./phoneValidation-angular/`
 
 ##### Step-4:  create docker container
-`docker compose -f docker-compose.yaml up`
+for mac `docker compose -f docker-compose.yaml up`
+ubunto `docker-compose -f docker-compose.yaml up`
 
 ##### Step-5: open the application:
 open the browser and type the following url `http://localhose:4200/`
