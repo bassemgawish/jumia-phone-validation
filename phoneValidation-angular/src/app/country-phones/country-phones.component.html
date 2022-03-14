@@ -1,0 +1,47 @@
+<div style="margin:2px; margin-left: 30px; margin-bottom: 30px;">
+    <h3>Filter By</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div style="display: inline-flex;">
+            <div style="margin-right: 20px;">
+                <h5>Country</h5>
+                <select name="countryName" [(ngModel)]="search.countryName">
+                    <option *ngFor="let country of countries" [value]="country">
+                        {{ country}}
+                    </option>
+                </select>
+            </div>
+            <div style="margin-right: 30px; ">
+                <h5>State</h5>
+                <input type="radio" id="all" name="state" value="" checked [(ngModel)]="search.state" />
+                <label for="all">All</label>
+                <input type="radio" id="valid" name="state" value="valid" [(ngModel)]="search.state" />
+                <label for="valid">Valid</label>
+                <input type="radio" id="inValid" name="state" value="not valid" [(ngModel)]="search.state" />
+                <label for="inValid">Not Valid</label>
+            </div>
+            <div style="align-self: end;">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div style="margin:0 30px; margin-bottom: 50px;">
+    <table>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>country</td>
+            <td>country code</td>
+            <td>phone number</td>
+            <td>state</td>
+        </tr>
+        <tr *ngFor="let customer of customerList">
+            <td>{{ customer.id }}</td>
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.country }}</td>
+            <td>{{ customer.countryCode }}</td>
+            <td>{{ customer.phoneNumber }}</td>
+            <td>{{ customer.state }}</td>
+        </tr>
+    </table>
+</div>
