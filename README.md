@@ -17,13 +17,13 @@ A single page application in Java using SQLite 3 to list and categorize country 
 
 ### Guidance
 
-#####Step-1:  build the spring boot  docker images using command
+##### Step-1:  build the spring boot  docker images using command
 `docker build -t spring-phone-validation  ./phoneValidation/`
-#####Step-2:  build angular application docker image using command
+##### Step-2:  build angular application docker image using command
 `docker build -t angular-phone-validation ./phoneValidation-angular/`
 
-#####Step-3:  create docker container
+##### Step-3:  create docker container
 `docker compose -f docker-compose.yaml up`
 
-#####Step-4: open the application:
+##### Step-4: open the application:
 open the browser and type the following url `http://localhose:4200/`
