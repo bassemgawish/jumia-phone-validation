@@ -5,6 +5,7 @@
             <div style="margin-right: 20px;">
                 <h5>Country</h5>
                 <select name="countryName" [(ngModel)]="search.countryName">
+                    <option value="">Select Country</option>
                     <option *ngFor="let country of countries" [value]="country">
                         {{ country}}
                     </option>
