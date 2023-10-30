@@ -56,6 +56,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>3.2.2</version> <!-- Specify the Checkstyle plugin version -->
+				<configuration>
+					<configLocation>src/main/resources/config/checkstyle.xml</configLocation> <!-- Specify your Checkstyle rules file -->
+				</configuration>
+			</plugin>
 		</plugins>
 		<finalName>phoneValidation</finalName>
 	</build>
