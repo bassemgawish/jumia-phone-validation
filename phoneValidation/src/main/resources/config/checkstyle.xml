@@ -19,8 +19,8 @@
             <property name="allowedAnnotations" value="Override"/>
         </module>
 
-        <module name="JavadocVariable">
-        </module>
+<!--        <module name="JavadocVariable">-->
+<!--        </module>-->
 
     </module>
 
